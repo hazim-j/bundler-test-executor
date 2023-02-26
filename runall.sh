@@ -38,7 +38,7 @@ pdm run test --launcher-script=$launcher -o junit_suite_name="$name"  --junit-xm
 xq . $outxml > $outjson
 
 cat $outjson
-kill $(lsof -t -i:3000)
+
 done
 
 ls $OUT > $OUT/index.txt
