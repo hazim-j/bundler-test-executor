@@ -4,7 +4,7 @@ services:
 
   bundler:
     ports: [ '3000:4337' ]
-    image: stackupwallet/stackup-bundler:latest
+    image: stackupwallet/stackup-bundler
     environment:
       - ERC4337_BUNDLER_ETH_CLIENT_URL=http://geth-dev:8545
       - ERC4337_BUNDLER_PRIVATE_KEY=c6cbc5ffad570fdad0544d1b5358a36edeb98d163b6567912ac4754e144d4edb
